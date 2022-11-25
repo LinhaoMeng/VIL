@@ -1,0 +1,24 @@
+/* jsconfig.json is a configuration file to assist your editor's Language Server (LSP) with the javascript usage in your project folder.
+
+While it appears this has originated from VsCode, any editor using LSP will make use of jsconfig.json including VsCode, SublimeText and so on.
+
+It's most commonly used to include/exclude folders in your intellisense (which nowadays most editors use LSP), and map aliases in your source code to certain folders. */
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  }
+}
