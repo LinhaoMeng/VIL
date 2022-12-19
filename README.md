@@ -22,11 +22,9 @@ under VIAL folder:
 ```
 cd backend
 
-conda create --prefix ./envs python=3.8 // create vitual environment (only run this command for the first time)
+conda env create -f envs.yml -p ./envs // create vitual environment (only run this command for the first time)
 
 conda activate ./envs //activate vitual enrironment
-
-conda install --file requirements.txt // install packages(only run this command for the first time)
 
 flask run
 ```
