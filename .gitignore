@@ -5,7 +5,6 @@ envs/
 envs2/
 backend/data/
 
-*.pickle
 # ========= Node ==============
 .DS_Store
 node_modules
